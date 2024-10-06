@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treatments</title>
+    <!-- Add the Font Awesome CDN link to use the icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            overscroll-behavior: none;
+        }
+        .navbar {
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: #333;
+            overflow: hidden;
+            text-align: center; /* Center-aligns the content */
+        }
+        .navbar a {
+            display: inline-block; /* Ensures links are in a row */
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #338933; /* Background color for the active link */
+            color: white; /* Text color for the active link */
+        }
+        .footer {
+            background-color: #482c0d; /* Brown color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .footer-left, .footer-right {
+            width: 48%;
+        }
+        .footer p, .footer a {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ddd;
+        }
+        .footer .social-icons a {
+            margin: 0 5px;
+            font-size: 18px;
+        }
+
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            flex: 1 1 calc(25% - 40px); /* Responsive width calculation */
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        body {
+            font-family: 'Georgia', serif; /* Traditional font */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        h1 {
+            text-align: center;
+            
+            font-size: 2.5em; /* Larger font size for the header */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif; /* Traditional font */
+        }
+
+        /* Paragraph Styles */
+        p {
+            line-height: 1.8; /* Increased line-height for readability */
+            margin: 20px auto;
+            padding: 0 15px;
+            max-width: 800px; /* Constrain width for readability */
+            font-size: 1.1em; /* Slightly larger text for better readability */
+            
+        }
+
+        /* List Styles */
+        ul {
+            list-style-type: disc; /* Disc bullet points */
+            margin: 20px auto;
+            padding: 0 15px;
+            max-width: 800px; /* Constrain width for readability */
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em; /* Slightly larger text for better readability */
+            color: #6d4c41; /* Earthy brown color for list items */
+        }
+
+        /* Additional Styling for Enhanced Visual Appeal */
+        ul li::marker {
+            color: #8c6d5c; /* Lighter brown color for bullet points */
+        }
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            p, ul {
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 2em; /* Adjust font size for smaller screens */
+            }
+
+            li {
+                font-size: 1em; /* Adjust font size for smaller screens */
+            }
+        }
+    
+        .buy-now-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+        }
+
+        .buy-now-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .buy-now-button:hover {
+            background-color: #218838;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+    </style>
+</head>
+
+<body>
+    <br><br>
+
+    <img src="Logo.png" alt="Logo" width="200px" style="margin-left: 100px;">
+    <img src="Mangalapathy AyurvedA.ai.png" alt="Logo" width="200px" style="margin-left: 880px;">
+
+
+    <div class="navbar">
+        <a href="Home.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="treatments.html">TREATMENTS</a>
+        <a href="products.html" class="active">PRODUCTS</a>
+        <a href="wellness.html">WELLNESS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <br><br>
+
+    <h1>Mangalapathy Products Story </h1>
+    <br>
+    <p>
+        Make healthy living Easy and Delicious!
+    </p>
+    <p>
+        Over the last 25 years, we witnessed the transformative power of healthy superfoods combined with medications. We began providing these superfoods to our patients as part of their treatment plans, receiving remarkable feedback on their effectiveness at our clinic. In fact, these were the very superfoods we consumed on our journeys to health! 
+        Why did we decide to bring these supplements beyond the walls of our clinic? Having witnessed the transformative power of these superfood supplements in our patients' lives, we are thrilled to introduce them to the public. Therefore, now, we are bringing these time-tested products to you, ensuring that everyone can benefit from the health-boosting properties of our Ayurvedic food supplements. We also recognized the challenges of maintaining a perfectly balanced diet in our busy lives. That's how our line of these Superfoods and Nutraceuticals was born. 
+        Each of our products is formulated using our proprietary blend of bioactive ingredients with a touch of tradition with a modern twist, and are designed to:
+    </p>
+    <ul>
+        <li>Support Disease prevention: Proactive solutions to support optimal health. Our Superfoods are crafted to address the root causes of imbalances, fostering a healthy internal health.</li>  
+
+        <li>Dietary harmony: Seamless integration into your daily routine, making a healthy lifestyle achievable and enjoyable.</li>
+        
+        <li>Delicious consumption: Enjoyable flavors that enhance your culinary experience. 
+        Our Exquisite Range:</li>
+        
+        <li>Fuel your day, naturally: Multigrain Energy Cereal provides sustained energy with the goodness of whole grains.</li>
+        
+        <li>Calming Focus: A satisfying, caffeine-free, Ashwa Vital Brew, an tea/coffee alternative for sustained energy.</li>
+        
+        <li>Kickstart the weight management journey with Flaxfit Fatburn blend (Starter/Soup/Rasam) specially formulated flaxseed product.</li>
+        
+        <li>Spice up your health: Beyond Chilli and Detox Curryblend add flavor while supporting your well-being. 
+        Make Nutrient-packed Super Dosa with this convenient and wholesome Multigrian Super Dosa mix with 7 Grains! </li>
+        
+        <li>Sesame power: Black Sesame Vital Blend and Sweet Sesame Blend, sprinkle this superfood on anything for a powerful dose of nutrition in savoury and sweet options.</li>
+        
+        <li>Nourish your hair from within with Hair Thrive curry leaves blend.</li>
+    </ul>
+
+    <br><br><br><br>
+
+
+    <div class="products-container">
+        <div class="product-card">
+          <img src="Facepack.png" alt="Vedic Elixir Facepack" class="product-image">
+          <h3>Vedic Elixir Facepack: Rediscover Your Natural Radiance</h3>
+          <p>RM 23.50</p>
+        </div>
+        <div class="product-card">
+          <img src="Tooth powder.png" alt="Arjuna Herbal Tooth Powder" class="product-image">
+          <h3>Arjuna Herbal Tooth Powder: A Nature's Dental Shield</h3>
+          <p>RM 23.50</p>
+        </div>
+        <div class="product-card">
+          <img src="Hairpack.png" alt="Kesha Bliss" class="product-image">
+          <h3>Kesha Bliss: Nature's Elixir for Hair and Well-being</h3>
+          <p>RM 24.80</p>
+        </div>
+        <div class="product-card">
+          <img src="Skin cleansing scrub.png" alt="Amla Glow Skin Cleansing Scrub" class="product-image">
+          <h3>Amla Glow Skin Cleansing Scrub</h3>
+          <p>RM 24.80</p>
+        </div>
+        <div class="product-card">
+            <img src="Baby bath powder.png" alt="Baby Bath" class="product-image">
+            <h3>Bala Snana Baby Bath Powder</h3>
+            <p>RM 24.80</p>
+          </div>
+          <div class="product-card">
+            <img src="8.png" alt="Multigrain" class="product-image">
+            <h3>Multigrain Energy Cereal Mix</h3>
+            <p>RM 17.60</p>
+          </div>
+          <div class="product-card">
+            <img src="12.png" alt="Flaxfit" class="product-image">
+            <h3>Flaxfit Fatburn Blend</h3>
+            <p>RM 13.00</p>
+          </div>
+          <div class="product-card">
+            <img src="2.png" alt="Beyond" class="product-image">
+            <h3>Beyond Chilli</h3>
+            <p>RM 23.50</p>
+          </div>
+          <div class="product-card">
+            <img src="4.png" alt="Sweet Sesame Blend" class="product-image">
+            <h3>Sweet Sesame Blend: A Sprinkle of Delicious Goodness</h3>
+            <p>RM 11.00</p>
+          </div>
+          <div class="product-card">
+            <img src="15.png" alt="Ashwa Vital Brew" class="product-image">
+            <h3>Ashwa Vital Brew</h3>
+            <p>RM 10.00</p>
+          </div>
+          <div class="product-card">
+            <img src="17.png" alt="Detox Curryblend" class="product-image">
+            <h3>Detox Curryblend: Cleanse, Nourish, and Support Your Wellbeing in Every Meal</h3>
+            <p>RM 11.80</p>
+          </div>
+          <div class="product-card">
+            <img src="6.png" alt="Hairthrive Curry leaves blend" class="product-image">
+            <h3>Hairthrive Curry leaves blend: Unlock the Power of Curry leaves</h3>
+            <p>RM 11.00</p>
+          </div>
+          <div class="product-card">
+            <img src="10.png" alt="Black Sesame" class="product-image">
+            <h3>Black Sesame Vital Blend: Sesame Power in Every Bite</h3>
+            <p>RM 11.00</p>
+          </div>
+          <!-- <div class="product-card">
+            <img src="pain balm.jpg" alt="Balm" class="product-image" style="height: 70%;">
+            <h3>Mangalapathy Pain Balm</h3>
+            <p>Rs 1,000.00</p>
+          </div>
+          <div class="product-card">
+            <img src="palmyra.webp" alt="Palmyra" class="product-image">
+            <h3>Palmyra Soup Mix</h3>
+            <p>Rs 500.00</p>
+          </div> -->
+          
+      </div>
+      
+      <div class="buy-now-container">
+        <a href="https://wa.me/60123593207?text=I'm%20interested%20in%20buying%20this%20product!" target="_blank" class="buy-now-button">
+          Buy Now
+        </a>
+      </div>
+
+
+    <br><br>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <p><strong>MANGALAPATHY AYURVEDA</strong></p>
+            <p>MALESIYA</p>
+            <p>&copy; 2019 - 2024 MANGALAPATHY AYURVEDA</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>CONNECT WITH US</strong></p><br>
+            <div class="social-icons">
+              <!-- <a href="https://www.facebook.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+              <a href="https://www.twitter.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mangalapathy?originalSubdomain=lk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCCpNevkc2o8B8QXVBAHTKBw?app=desktop" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>

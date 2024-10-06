@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Add the Font Awesome CDN link to use the icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            overscroll-behavior: none;
+        }
+        .navbar {
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: #333;
+            overflow: hidden;
+            text-align: center; /* Center-aligns the content */
+        }
+        .navbar a {
+            display: inline-block; /* Ensures links are in a row */
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #338933; /* Background color for the active link */
+            color: white; /* Text color for the active link */
+        }
+        .footer {
+            background-color: #482c0d; /* Brown color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-left, .footer-right {
+            width: 48%;
+        }
+        .footer p, .footer a {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ddd;
+        }
+        .footer .social-icons a {
+            margin: 0 5px;
+            font-size: 18px;
+        }
+        
+        .three {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            gap: 150px; /* Space between items */
+            padding: 20px;
+            
+        }
+
+        .item {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .item img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            object-fit: cover; /* Ensures images maintain their aspect ratio within the specified size */
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #ddd; /* Border around the image */
+            border-radius: 15px; /* Stylish rounded corners */
+            transition: transform 0.3s, border-color 0.3s; /* Transition for hover effects */
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .item:hover img {
+            transform: scale(1.1);
+            border-color: #007bff; /* Change border color on hover */
+        }
+
+        .item:hover a {
+            color: #007bff;
+        }
+
+
+
+        
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Stylish font */
+
+.site-breadcrumb {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+    background-attachment: scroll;
+}
+
+.site-breadcrumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for more contrast */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f4e04d; /* Bright gold color */
+    overflow: hidden;
+    border-right: .15em solid #f4e04d; /* Cursor effect */
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left; /* Align heading to left */
+    animation: typing 3.5s steps(40, end), blink .75s step-end infinite; /* Typing effect */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #f4e04d; }
+}
+
+.subh {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #e0e0e0; /* Light grey for the paragraph */
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for paragraph */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+    
+        
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const heading = document.getElementById('heading');
+            heading.style.width = heading.textContent.length + 'ch'; /* Set width for typing effect */
+        });
+    </script>
+</head>
+<body>
+
+    <br><br>
+
+    <img src="Logo.png" alt="Logo" width="200px" style="margin-left: 100px;">
+    <img src="Mangalapathy AyurvedA.ai.png" alt="Logo" width="200px" style="margin-left: 880px;">
+
+    <div class="navbar">
+        <a href="Home.html" class="active">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="treatments.html">TREATMENTS</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wellness.html">WELLNESS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    
+    <br><br>
+
+    <!-- breadcrumb -->
+    <div class="site-breadcrumb" style="background: url(bg2.jpg); ">
+        <div class="container">
+            <br><br><br><br>
+
+            <h1><center>WELCOME TO  MANGALAPATHY AYURVEDA</center></h1>
+            <br><br>
+            <p class="subh">
+                Mangalapathy Ayurveda is a Pioneer in providing Holistic Ayurveda Treatment through the Traditional Organic Food Supplements & Authentic Lifestyle We are dedicated to serve to our country Sri Lanka
+                through all over the world.
+            </p>
+            <br><br><br><br>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+
+
+    <div style="background-color: #ddd;">
+        <br><br>
+
+        <h2><center>TAKING CARE OF YOUR HEALTH</center></h2>
+        <br>
+
+        <div class="three">
+            <div class="item">
+                <img src="respiratory.jpg" alt="treatment" width="150px">
+                <p><a href="treatments.html">Special Treatment</a></p>
+            </div>
+            <div class="item">
+                <img src="products.jpg" alt="products" width="150px">
+                <p><a href="products.html">Unique Products</a></p>
+            </div>
+            <div class="item">
+                <img src="Yoga and ayur.jpg" alt="services" width="150px">
+                <p><a href="wellness.html">Wellness Services</a></p>
+            </div>
+        </div>
+    
+        <br><br><br><br>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-left">
+            <p><strong>MANGALAPATHY AYURVEDA</strong></p>
+            <p>MALESIYA</p>
+            <p>&copy; 2019 - 2024 MANGALAPATHY AYURVEDA</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>CONNECT WITH US</strong></p><br>
+            <div class="social-icons">
+              <!-- <a href="https://www.facebook.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+              <a href="https://www.twitter.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mangalapathy?originalSubdomain=lk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCCpNevkc2o8B8QXVBAHTKBw?app=desktop" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    </div>
+    
+
+</body>
+</html>
+

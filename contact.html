@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treatments</title>
+    <!-- Add the Font Awesome CDN link to use the icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            overscroll-behavior: none;
+        }
+        .navbar {
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: #333;
+            overflow: hidden;
+            text-align: center; /* Center-aligns the content */
+        }
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #338933; /* Background color for the active link */
+            color: white; /* Text color for the active link */
+        }
+        .footer {
+            background-color: #482c0d; /* Brown color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .footer-left, .footer-right {
+            width: 48%;
+        }
+        .footer p, .footer a {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ddd;
+        }
+        .footer .social-icons a {
+            margin: 0 5px;
+            font-size: 18px;
+        }
+
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin-left: 342px;
+            margin-top: 25px;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .locations {
+            flex: 1;
+        }
+
+        .contact-form h2,
+        .locations h2 {
+            margin-top: 0;
+            margin-left: 100px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .locations h3 {
+            margin-bottom: 5px;
+            margin-left: 50px;
+        }
+
+        .locations p {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            margin-left: 50px;
+        }
+        /* Vertical line between sections */
+        .container::before {
+            content: "";
+            width: 3px;
+            background-color: #5f723e;
+            position: absolute;
+            top: 110%;
+            bottom: -80%;
+            left: 52%;
+            transform: translateX(-50%);
+            
+        }
+
+        /* Adjusting padding for the gap between form and locations */
+        .container > div {
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <br><br>
+
+    <img src="Logo.png" alt="Logo" width="200px" style="margin-left: 100px;">
+    <img src="Mangalapathy AyurvedA.ai.png" alt="Logo" width="200px" style="margin-left: 880px;">
+
+
+    <div class="navbar">
+        <a href="Home.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="treatments.html">TREATMENTS</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wellness.html">WELLNESS</a>
+        <a href="contact.html" class="active">CONTACT</a>
+    </div>
+    <br><br>
+
+    <div style="background-color: #4a6c75; height: 40px;">
+        <h1 style="margin-left: 250px; color: #fff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CONTACT US</h1>
+    </div>
+    <br><br>
+    <div class="img1" style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">
+            One of the leading Ayurvedic Healthcare Pioneers in Sri Lanka. Run by the 4th generation of expertized Physicians and a tradition of over 45 years of expertise in ayurvedic treatment. Our medicines are prepared by Traditional formulae carried through Generations. The genuine holistic experience for the well-being of the body and mind along with the finest quality Traditional Organic Food Supplements & Authentic Lifestyle to our country Sri Lanka and all over the world. Our motive is to enhance Health and Wellness in an innovative way in the Ayurvedic Traditional manner. We ensure that our clients are highly satisfied with our treatments and excellent services in both Colombo and Jaffna.
+        </p>
+        <img src="4 Wellnes Ayurveda.jpg" alt="img" style="width: 300px; margin-right: 230px; border: 2px solid #c3a48e; padding: 10px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);">
+    </div>
+    
+
+    <br><br><br><br>
+
+    
+    <div class="container">
+        <div class="contact-form">
+            <br>
+            <h2>CONTACT US</h2>
+            <br><br>
+            <form action="mailto:mangalapathymalaysia@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <center><input type="submit" value="Submit"></center>
+            </form>
+        </div>
+
+        <div class="locations">
+            <br>
+            <h2>LOCATIONS</h2><br>
+            <h3>Malesiya</h3>
+            <p>
+                Series Supplies (M) Sdn Bhd.
+                <br>B8/G Block B, Jalan Selaman 1,
+                <br>Dataran Palma,
+                <br>68000 Ampang, Selangor Darul Ehsan,
+                <br>Malesiya.
+                <br><b>Tel: +6012 359 3207</b>
+            </p>
+            <h3>JAFFNA</h3>
+            <p>
+                No.41/5, Arasaveethi,
+                <br>Sankilijan Road, Nallur, Jaffna.
+                <br><b>Tel: +94 21 205 4066</b>
+            </p>
+            <h3>COLOMBO</h3>
+            <p>
+                No.29-5/4, Rohini Road,
+                <br>Wellawatte, Colombo 06.
+                <br><b>Tel: +94 11 250 2645</b>
+            </p>
+            <h3>CHENNAI - INDIA</h3>
+            <p>
+                No.19, VOC Colony, First Street,
+                <br>Chennai-600029, India
+            </p>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+    
+    <div class="footer">
+        <div class="footer-left">
+            <p><strong>MANGALAPATHY AYURVEDA</strong></p>
+            <p>MALESIYA</p>
+            <p>&copy; 2019 - 2024 MANGALAPATHY AYURVEDA</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>CONNECT WITH US</strong></p><br>
+            <div class="social-icons">
+              <!-- <a href="https://www.facebook.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+              <a href="https://www.twitter.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mangalapathy?originalSubdomain=lk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCCpNevkc2o8B8QXVBAHTKBw?app=desktop" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>

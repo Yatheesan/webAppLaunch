@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <!-- Add the Font Awesome CDN link to use the icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            overscroll-behavior: none;
+        }
+        .navbar {
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: #333;
+            overflow: hidden;
+            text-align: center; /* Center-aligns the content */
+        }
+        .navbar a {
+            display: inline-block; /* Ensures links are in a row */
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #338933; /* Background color for the active link */
+            color: white; /* Text color for the active link */
+        }
+        .footer {
+            background-color: #482c0d; /* Brown color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-left, .footer-right {
+            width: 48%;
+        }
+        .footer p, .footer a {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ddd;
+        }
+        .footer .social-icons a {
+            margin: 0 5px;
+            font-size: 18px;
+        }
+        .styled-img {
+            width: 200px; /* Fixed width */
+            height: 200px; /* Fixed height to ensure the image is a perfect circle */
+            margin-right: 230px;
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+        }
+
+        .styled-img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens the shadow on hover */
+        }
+
+        .timeline-title {
+            text-align: center;
+            color: #ffffffe6;
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .timeline {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333; /* White background for the timeline */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .timeline-event {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            border-left: 3px solid #4CAF50; /* Green line for the timeline */
+        }
+
+        
+
+        .timeline-year {
+            font-weight: bold;
+            color: #4CAF50; /* Green color for the year */
+            margin-right: 10px;
+        }
+
+        .timeline-event p {
+            margin: 0;
+            padding: 10px 15px;
+            background-color: #3e3636;
+            color: #f9f9f9db; /* Slightly off-white background for the event text */
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline-event p:hover {
+            background-color: #444343; /* Darker background on hover */
+        }
+
+        .title{
+            margin-left: 250px;
+        }
+
+
+        .awards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.award-item {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.award-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.award-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+
+<body>
+
+    <br><br>
+
+    <img src="Logo.png" alt="Logo" width="200px" style="margin-left: 100px;">
+    <img src="Mangalapathy AyurvedA.ai.png" alt="Logo" width="200px" style="margin-left: 880px;">
+
+
+    <div class="navbar">
+        <a href="Home.html">HOME</a>
+        <a href="about.html" class="active">ABOUT US</a>
+        <a href="treatments.html">TREATMENTS</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="wellness.html">WELLNESS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <br><br>
+
+    <div style="background-color: #4a6c75; height: 40px;">
+        <h1 style="margin-left: 250px; color: #fff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ABOUT US</h1>
+    </div><br>
+    <h2><center>About the Mangalapathy Ayurveda</center></h2>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">
+            Mangalapathy Ayurveda was established to enhance the holistic services of hereditary Ayurvedic practitioners by Dr. R. Mangalambigai Ammal. She brought the experience of generations of Ayurvedic service as the chief physician at the centre. Mangalapathy Ayurveda began its journey at a time when the Ayurvedic products were regarded with insignificance and also the crisis situation was severe in Jaffna.  Even though we earned a remarkable reputation by the intensive focus on formulating the Ayurvedic medicines through the knowledge gained from several India visits. The Centre has been providing high-quality medicines along with Traditional food supplements in certified standards by the leading team of experienced doctors. 
+        </p>
+        <img src="about.jpg" alt="img" style="width: 250px; margin-right: 230px;">
+    </div>
+    <br>
+        
+    <h2 style="font-family: 'Georgia', serif; /* Traditional serif font */
+    color: #8B4513; /* Rich, earthy brown color */
+    text-align: center;
+    border-bottom: 2px solid #8B4513; /* Decorative underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; margin-left: 300px;">
+        Vision
+    </h2>
+    <p style="font-family: 'Palatino', serif; /* Classic serif font for the text */
+    color: #4B2E2E; /* Deep brown color for the text */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify;
+    max-width: 800px; /* Limits the width of the text for better readability */
+    margin: 0 auto 40px auto; /* Center the text with margin */">
+        Commitment to preserving the ancient traditions of Ayurveda while embracing modern scientific advancements, we strive to become a trusted global destination for wellness, where every individual can embark on a transformative journey towards a healthier and more balanced
+    </p>
+    <h2 style="font-family: 'Georgia', serif; /* Traditional serif font */
+    color: #8B4513; /* Rich, earthy brown color */
+    text-align: center;
+    border-bottom: 2px solid #8B4513; /* Decorative underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; margin-left: 300px;">
+        Mission
+    </h2>
+    <p style="font-family: 'Palatino', serif; /* Classic serif font for the text */
+    color: #4B2E2E; /* Deep brown color for the text */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify;
+    max-width: 800px; /* Limits the width of the text for better readability */
+    margin: 0 auto 40px auto; /* Center the text with margin */">
+        Enhance Mangalapathy Ayurveda as a trusted head-to-heel brand with an in-depth and long-term approach, upgrading at each step the standard to guide individuals on their path to holistic well-being and longevity.
+    </p><br>
+    <h2 style="font-family: 'Georgia', serif; /* Traditional serif font */
+    color: #8B4513; /* Rich, earthy brown color */
+    text-align: center;
+    border-bottom: 2px solid #8B4513; /* Decorative underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; margin-left: 300px;">
+        Our Logo
+    </h2>
+    <p style="font-family: 'Palatino', serif; /* Classic serif font for the text */
+    color: #4B2E2E; /* Deep brown color for the text */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify;
+    max-width: 800px; /* Limits the width of the text for better readability */
+    margin-left: 220px; /* Center the text with margin */">
+        In Hinduism, Garuda is known as the 'king of the birds' and also the vehicle (vahana) of Lord Vishnu. Thus, similar to an Eagle’s rebirth in order to survive along with Focus, Sharp vision, Alertness, Fearlessness & Tenacious attributes, our logo symbolizes our willingness to shine through the challenges in the evolving world.
+        <img src="Logo.png" alt="logo" width="200px" style="margin-left: 870px; margin-top: -140px;">
+    </p>
+    <br><br>
+    
+    <div style="background-color: #4a6c75;">
+        <h1 style="color: #fff; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            PROVIDING YOU WITH THE BEST DOCTORS FOR THE BEST CARE
+        </h1>
+    </div>
+
+    <div style="background-color: #333; color: #ffffffb6;">
+    <br>
+
+        <div class="title">
+            <h2>Dr. R Mangalambigai Ammal</h2>
+            <h3>Chief Consultant, Founder & Chairperson</h3><br>
+        </div>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">Dr.Mangalambigai Ammal is the founder & CEO of Mangalapthy Ayurveda. The journey of Mangalapathy Ayurveda began with a visionary endeavour by Dr.Mangalambigai when, it was significant to her family and the public during 1973. As the result of acknowledging the eminence of her hereditary medical practices. Later, she established the clinic on a small scale throughout many challenges such as the crisis situation and displacement in a women empower family in 1976. Afterwards, she visited India to explore several unique traditional treatment methods and began manufacturing medicines by her own to expand the service in Sri Lanka. With a deep understanding of the principles of Ayurveda, she customizes personalized wellness plans that align with each individual's unique constitution and lifestyle. She is dedicated to empowering individuals to take charge of their health, fostering a harmonious balance between the natural elements within their bodies, and promoting longevity and vitality. She got the Wedaduru Abhiman Presidential Ayurveda Awards in 2023. At present, she has been continuing her service together with the support of her brother’s family.</p>
+        <img src="6D0A3346.JPG" alt="img" class="styled-img">
+    </div>
+    <br><hr><br>
+    
+        <div class="title">
+            <h2>Dr. R Lakshmanaiyer</h2>
+            <h3>Director & Consultant</h3><br>
+        </div>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">Dr.Lakshmanaiyer, brother of Dr.Mangalambigai Ammal, is one of the Director, Physician and Dietary Consultant in Mangalapathy Ayurveda. He is an influential figure in the field of Ayurveda for over 40 years, he had succeeded in treating heart diseases, renal diseases and Chronic diseases such as Ulcer, Arthritis, Diabetes and its complications through the way of our unique traditional Ayurvedic system along with our own finest medicines. Also, he’s incharge for the proper formulations & preparational methods of our medicines. Together with our team, he plays a critical role in providing holistic treatments & preventive methods along with traditional healthy food products for the Body & Mind as the topmost service.</p>
+        <img src="Dr LakshmanaIyer.jpg" alt="img" class="styled-img">
+    </div>
+    <br><hr><br>
+    
+        <div class="title">
+            <h2>Dr. L Prakatheeswaran</h2>
+            <h3>Executive Director</h3><br>
+        </div>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">Dr.L.Prakatheeswaran, an Executive Director and Ayurvedic physician at Mangalapathy Ayurveda, is deeply involved in the World Bank Project aimed at modernizing Ayurvedic medicine preparation and promoting healthy foods for commercialization, export, and the advancement of Ayurvedic health tourism in the Northern region. He is dedicated to introducing the authentic Ayurvedic system and lifestyle to younger generations through innovative approaches, ensuring a prosperous future. His focus on developing new strategies for Ayurveda's growth and expanding its reach to prevent diseases within society is evident. He is known for formulating high-quality products through innovative research and development methods and maintaining traditional health protection standards amidst the demands of the contemporary business world. Dr Prakatheeswaran is dedicated to attaining high standards and certifications to enhance and maintain Mangalapathy Ayurveda Pvt Ltd.</p>
+        <img src="IMG_20200504_220510_325.jpg" alt="img" class="styled-img">
+    </div>
+    <br><hr><br>
+    
+        <div class="title">
+            <h2>Dr. Subajanane Jeyanthan</h2>
+            <h3>Consultant and Spiritual Energy Healer</h3><br>
+        </div>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">Dr Subajanane Jeyanthan is a Certified Level 2 Spiritual Energy Healer & Experienced Medical practitioner, skilled in Gynecology, Yoga, Skin Care, Diet Planning, and Renal Nutrition. Strong healthcare services professional with a Bachelor's Degree focused in Ayurvedic Medicine in Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya, India.
+        With a solid foundation in Ayurvedic medicine and years of experience, she offers personalized consultations and traditional Ayurvedic treatments, as she combines Ayurvedic principles with energy healing techniques to nurture the physical body, soul, and mind and teaching Ayurveda lifestyle practices, empowering individuals to embrace balanced living. She had transformed her life and can do same for you! She curates specialized Ayurveda Detox Programs, tailored to meet unique individual needs and goals, ensuring a transformative experience.</p>
+        <img src="Dr subajanane.jpeg" alt="img" class="styled-img">
+    </div>
+    <br><hr><br>
+    
+        <div class="title">
+            <h2>Dr. L Nagapooshany</h2>
+            <h3>Supervisor and Ayurvedic Practitioner</h3><br>
+        </div>
+    <div style="display: flex; align-items: center;">
+        <p style="margin-left: 250px; margin-right: 100px; flex: 1;">Dr L Nagapooshany is a dedicated Ayurvedic practitioner and manufacturing supervisor with a profound passion for Ayurveda and holistic wellness. An experienced professional in Ayurvedic manufacturing with a strong commitment to quality, safety, and efficacy guaranteeing that every product leaving our facility is of the utmost quality and meets the expectations of our consumers. She is deeply invested in maintaining the authenticity and integrity of our Ayurvedic products, utilizing traditional formulations while incorporating modern manufacturing practices. Having pursued extensive training and practical experience</p>
+        <img src="L.Nagapooshany.jpg" alt="img" class="styled-img">    
+    </div>
+    <br><br><br>
+</div>
+
+    <hr>
+    <div style="background-color: #444343;">
+    <br><br>
+    
+    <div class="timeline">
+        <h1 class="timeline-title">50 YEARS TIMELINE OF MANGALAPATHY AYURVEDA PVT LTD</h1>
+        <br>
+        <div class="timeline-event">
+    <p>
+        <span class="timeline-year">1973</span> -  Dr. R. Mangalambigai Ammal founded the Siddha Ayurvedic medical clinic in Nallur, Jaffna.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1975</span> - Visited India for Siddha Ayurveda medicinal purpose for the 1st time & purchased small scale equipment to prepare medicines for our patients.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1976</span> -  The Mangalapathy Siddha Ayurvedic medical clinic was registered under the name of  “The Mangalapathy Medical Hall” officially.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1979</span> - Purchased machineries such as micro-Pulverizer, Herbal juice Extractor, Manual grinding stone & Tablet Making Machines to expand our service.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1983</span> - We moved to a permanent place in Nallur and manufactured both Ayurvedic medicines to supply to Ayurvedic Doctors & Regional Indegenous Medical Centres.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1991</span> - Took place as the 1st Ayurvedic practitioners in Jaffna who brought Ayurvedic medicines & raw materials through Kumana ship from Colombo to Jaffna in the Crisis situation to our uninterrupted service.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1994</span> -  Published Books & Research Articles and conducted 1st exhibitions. </p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1996</span> -  Due to the crisis situation displaced to Chavakachcheri and continued our service for the public as a volunteer.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">1998</span> - Moved to Colombo and opened a branch in Dehiwala due to the Crisis situation in Jaffna </p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">2004</span> - Visited Germany and provided Ayurvedic treatment to expatriated Sri Lankans. Later, visited Canada. Afterwards, we began our Ayurvedic treatments to foreign clients.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">2005</span> - We provided medicines as a volunteer to ICRC in Batticaloa due to the Tsunami victims.</p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">2013</span> - Began to run the Clinic in both Colombo & Jaffna named as “Mangalapathy Siddha Ayurvedic Clinic. </p>
+        </div>
+        <div class="timeline-event">
+        <p>
+            <span class="timeline-year">2018</span> - Founded separate business sector for Traditional Healthy Foods and named as “Mangalapathy Healthy Foods”.
+    Elected for World Tourism Day Exhibition-2018</p>
+        </div>
+        <div class="timeline-event">
+    <p>
+        <span class="timeline-year">2019</span> - Elected for Thaifex Trade Show-World of Food Asia 2019 Exhibition in Bangkok, Thailand.
+    Elected for the World Tourism Day Exhibition from Jaffna District in Independence Square.
+    Elected for International Trade Fair-2019
+    Elected for the “Vivasaya 2019” exhibition in BMICH.
+    IDB – SMIDEX 2019 Award for all Island Best Entrepreneurs Competition of Small & Medium Scale Industries for Food& Beverage Products</p>
+        </div>
+    <div class="timeline-event">
+    <p>
+        <span class="timeline-year">2020</span> - Due to the Covid-19 Pandemic situation we provided the Herbal Drinks to improve the immune system for the frontline forces in quarantine centres as a volunteer. 
+    Registered all services under the name of “Mangalapathy Ayurveda Pvt Ltd”.</p>
+    </div>
+    <div class="timeline-event">
+    <p>
+        <span class="timeline-year">2021</span> - .Started a World Bank Project ‘‘Modernizing of Ayurvedic Medicine Preparation and Ayurvedic Healthy Foods towards Commercialization, Export orientation and Promotion of Ayurvedic Health tourism’’ in Northern region. Obtained the Standard certificate of ISO 22000, GMP, HACCP to promote best practices </p>
+    </div>
+    <div class="timeline-event">
+    <p>
+        <span class="timeline-year">2023</span> -   Registered our business in India to future expansion activities. 
+    Ministry of Industries - National Industry Excellence Award Gold Winner 2023 – Ayurvedic sector 
+    Wedaduru Abhiman Presidential Ayurveda Award holder- 2023
+    EDB Branding through Packaging Competition for Export Oriented women – Led Business Winner 
+    Obtained the ISO 9001 Standard certificate</p>
+    </div>
+    </div>
+    <br><br>
+    </div>
+    <hr><br>
+
+    <h2><center>Awards & Recognition</center></h2>
+    <br><br>
+
+    <div class="awards-container">
+        <div class="award-item"><img src="D85_3866.JPG" alt="Award 1"></div>
+        <div class="award-item"><img src="GOLD AWARD.png" alt="Award 2"></div>
+        <div class="award-item"><img src="Mangalapathu National Industry Excellence Award for 2023 1 copy-2 (1).jpg" alt="Award 3"></div>
+        <div class="award-item"><img src="president award photo.pdf.png" alt="Award 4"></div>
+    </div>
+    <div class="awards-container">
+        <div class="award-item"><img src="Screenshot 2024-09-08 225108.png" alt="Award 5"></div>
+        <div class="award-item"><img src="Screenshot 2024-09-08 225158.png" alt="Award 6"></div>
+        <div class="award-item"><img src="Screenshot 2024-09-08 225210.png" alt="Award 7"></div>
+        <div class="award-item"><img src="Screenshot 2024-09-08 225218.png" alt="Award 8"></div>
+    </div>
+
+
+    <br><br><br><br>
+
+    <div class="footer">
+        <div class="footer-left">
+            <p><strong>MANGALAPATHY AYURVEDA</strong></p>
+            <p>MALESIYA</p>
+            <p>&copy; 2019 - 2024 MANGALAPATHY AYURVEDA</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>CONNECT WITH US</strong></p><br>
+            <div class="social-icons">
+              <!-- <a href="https://www.facebook.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+              <a href="https://www.twitter.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/mangalapathy_malaysia/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mangalapathy?originalSubdomain=lk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCCpNevkc2o8B8QXVBAHTKBw?app=desktop" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    </div>
+    
+
+</body>
+</html>
